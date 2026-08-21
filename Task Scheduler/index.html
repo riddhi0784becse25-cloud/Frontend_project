@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📅 Task Scheduler</h1>
+        <p class="subtitle">Plan Your Day</p>
+
+        <div class="form">
+
+            <input type="text" id="taskInput" placeholder="Enter your task">
+
+            <input type="date" id="taskDate">
+
+            <input type="time" id="taskTime">
+
+            <select id="priority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <button onclick="addTask()">Add</button>
+
+        </div>
+
+        <div id="taskList"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

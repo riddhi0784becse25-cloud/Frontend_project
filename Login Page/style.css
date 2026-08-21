@@ -1,0 +1,218 @@
+
+
+*{
+    margin:0px;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    background:linear-gradient(135deg,#0d63a1,#1562c0,#94bfed);
+    display:flex;
+    flex-direction:column;
+}
+
+
+nav{
+    height:70px;
+    background:rgba(134, 6, 193, 0.168);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 50px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:white;
+}
+
+.menu{
+    display:flex;
+    gap:40px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:orange;
+}
+
+.notification{
+    position:relative;
+    font-size:28px;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.notification:hover{
+    transform:scale(1.15);
+}
+
+.badge{
+    position:absolute;
+    top:-8px;
+    right:-11px;
+    background:red;
+    color:white;
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:13px;
+    font-weight:bold;
+}
+
+
+
+.container{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    background:white;
+    width:380px;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 15px 30px rgba(0,0,0,.3);
+}
+
+.card h1{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0d47a1;
+}
+
+input{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border-radius:8px;
+    border:1px solid #bbb;
+    font-size:16px;
+    transition:.3s;
+}
+
+input:hover{
+    border:1px solid orange;
+}
+
+
+
+.password-box{
+    position:relative;
+}
+
+.password-box input{
+    padding-right:50px;
+}
+
+.password-box i{
+    position:absolute;
+    right:18px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    color:gray;
+    transition:.3s;
+}
+
+.password-box i:hover{
+    color:orange;
+}
+                                                                                                                        
+.tooltip{
+    position:absolute;
+    top:-42px;
+    right:-5px;
+    background:#333;
+    color:white;
+    padding:8px 12px;
+    border-radius:6px;
+    font-size:12px;
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+    white-space:nowrap;
+}
+
+.password-box i:hover + .tooltip{
+    opacity:1;
+    visibility:visible;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    margin-top:15px;
+    background:rgb(255, 136, 0);
+    border:none;
+    color:white;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#ff7a00;
+    transform:scale(1.03);
+}
+
+/* Links */
+
+.links{
+    text-align:center;
+    margin-top:20px;
+}
+
+.links a{
+    text-decoration:none;
+    color:#1565c0;
+    font-weight:bold;
+}
+
+.links a:hover{
+    color:orange;
+}
+
+
+.chatbot{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:70px;
+    height:70px;
+    background:#0084ff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+    transition:.3s;
+}
+
+.chatbot:hover{
+    transform:scale(1.12);
+    background:#0073e6;
+}
+
+.chatbot i{
+    color:white;
+    font-size:32px;
+}
