@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e4f7f8;
+}
+
+/* Navbar */
+nav {
+    background: linear-gradient(90deg, #1d2671, #c33764);
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.nav-links a:hover {
+    background-color: rgba(241, 241, 5, 0.2);
+}
+
+
+/* Hero */
+.hero {
+    background: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("https://media.istockphoto.com/id/119926339/photo/resort-swimming-pool.jpg?s=612x612&w=0&k=20&c=9QtwJC2boq3GFHaeDsKytF4-CavYKQuy1jBD2IRfYKc=");
+    background-size: 960px;
+    background-position: center;
+    color: white;
+    padding: 200px;
+    text-align: center;
+    
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    gap: 30px;
+}
+
+/* Rooms */
+.rooms {
+    flex: 1;
+}
+
+.room-card {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.room-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.room-card:hover img {
+    transform: scale(1.05);
+}
+
+
+
+/* Booking Form */
+.booking {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: linear-gradient(90deg, #00b09b, #96c93d);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #96c93d, #00b09b);
+    transform: scale(1.05);
+}
+
+/* input */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #764ba2;
+    outline: none;
+    box-shadow: 0 0 5px rgba(118, 75, 162, 0.5);
+}
+
+
+/* Result */
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    border-left: 5px solid #27ae60;
+    border-radius: 8px;
+    display: none;
+}
+
