@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Skincare Quiz Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+<div id="quizPage">
+
+<h2>🌸 Skincare Knowledge Quiz</h2>
+
+<p>1. How often should sunscreen be reapplied?</p>
+<input type="radio" name="q1" value="a"> Once daily<br>
+<input type="radio" name="q1" value="b"> Every 2-3 hours<br>
+<input type="radio" name="q1" value="c"> Once weekly<br><br>
+
+<p>2. Which vitamin helps brighten skin?</p>
+<input type="radio" name="q2" value="a"> Vitamin A<br>
+<input type="radio" name="q2" value="b"> Vitamin C<br>
+<input type="radio" name="q2" value="c"> Vitamin D<br><br>
+
+<p>3. What does SPF stand for?</p>
+<input type="radio" name="q3" value="a"> Sun Protection Factor<br>
+<input type="radio" name="q3" value="b"> Skin Power Formula<br>
+<input type="radio" name="q3" value="c"> Sun Product Formula<br><br>
+
+<p>4. Double cleansing removes mainly?</p>
+<input type="radio" name="q4" value="a"> Makeup & Sunscreen<br>
+<input type="radio" name="q4" value="b"> Water<br>
+<input type="radio" name="q4" value="c"> Sweat only<br><br>
+
+<p>5. Hyaluronic acid helps in?</p>
+<input type="radio" name="q5" value="a"> Drying skin<br>
+<input type="radio" name="q5" value="b"> Hydration<br>
+<input type="radio" name="q5" value="c"> Peeling skin<br><br>
+
+<button onclick="checkAnswers()">Submit Quiz</button>
+
+<h3 id="scoreResult"></h3>
+
+</div>
+<div id="spinPage">
+
+<h2>🎯 Spin & Win</h2>
+
+<div id="wheel">SPIN</div>
+
+<button onclick="spinWheel()">Spin Now</button>
+
+<h3 id="discountResult"></h3>
+
+</div>
+
+</div>
+
+
+<script src="script.js">
+
+</script>
+
+</body>
+</html>
