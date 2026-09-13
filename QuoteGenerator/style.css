@@ -1,0 +1,209 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* =========================
+   LIGHT MODE
+========================= */
+body.light {
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    color: #1f1f1f;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+.top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+}
+
+.top-bar h1 {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* =========================
+   THEME BUTTON
+========================= */
+#themeToggle {
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    color: inherit;
+    transition: 0.3s ease;
+}
+
+#themeToggle:hover {
+    transform: rotate(20deg) scale(1.1);
+}
+
+/* =========================
+   CATEGORY BUTTONS
+========================= */
+.category-buttons {
+    margin: 30px 0;
+}
+
+.category-buttons button {
+    padding: 10px 20px;
+    margin: 8px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    background: rgba(255,255,255,0.1);
+    color: inherit;
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+
+.category-buttons button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   QUOTE BOX
+========================= */
+.quote-box {
+    width: 85%;
+    max-width: 700px;
+    padding: 50px;
+    border-radius: 25px;
+    text-align: center;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+    box-shadow: 
+        0 10px 40px rgba(0,0,0,0.4),
+        inset 0 0 20px rgba(255,255,255,0.05);
+    transition: all 0.4s ease;
+    animation: floatCard 6s ease-in-out infinite;
+}
+
+body.light .quote-box {
+    background: rgba(255,255,255,0.6);
+    box-shadow: 
+        0 10px 40px rgba(0,0,0,0.1),
+        inset 0 0 15px rgba(255,255,255,0.6);
+}
+
+/* Floating animation */
+@keyframes floatCard {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+/* =========================
+   QUOTE TEXT
+========================= */
+#quote {
+    font-size: 22px;
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+/* Decorative quote marks */
+#quote::before {
+    content: "“";
+    font-size: 50px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    opacity: 0.2;
+}
+
+#quote::after {
+    content: "”";
+    font-size: 50px;
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    opacity: 0.2;
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+.actions button {
+    padding: 12px 22px;
+    margin: 8px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+/* Generate button gradient */
+.actions button:nth-child(1) {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Heart button */
+.actions button:nth-child(2) {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+
+/* Copy button */
+.actions button:nth-child(3) {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+
+/* Hover Effects */
+.actions button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+    .quote-box {
+        padding: 30px;
+    }
+
+    #quote {
+        font-size: 18px;
+    }
+
+    .top-bar {
+        padding: 20px;
+    }
+}
