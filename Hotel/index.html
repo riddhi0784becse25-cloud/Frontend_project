@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h2>Royal Stay Hotel</h2>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Rooms</a>
+        <a href="#">Book</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h1>Welcome to Royal Stay</h1>
+    <p>Comfort | Luxury | Affordable</p>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+
+    <!-- Rooms Section -->
+    <div class="rooms">
+        <h3>Available Rooms</h3>
+
+        <div class="room-card">
+    <img src="https://vuniversity.in/wp-content/uploads/2023/10/Types-of-room-single.png" alt="Single Room">
+    <h4>Single Room</h4>
+    <p>₹2000 per night</p>
+</div>
+
+<div class="room-card">
+    <img src="https://lh6.googleusercontent.com/LAbDs9JrwGjxAAQoHT1lNnKt4a5_OXDqw7S3hZQajGS30XvPwjynPOA8-afixA6QqxL_g7iPn12dRWTO40GhEyPS7n7CDzRYg61Ib334yCK6ZIPjLNZbZExrLk_8BPvf83fq1Qte" alt="Double Room">
+    <h4>Double Room</h4>
+    <p>₹3500 per night</p>
+</div>
+
+<div class="room-card">
+    <img src="https://image-tc.galaxy.tf/wijpeg-ahh70663kj96l3li71p6hu5gl/deluxe-room-sea-view.jpg" alt="Deluxe Room">
+    <h4>Deluxe Room</h4>
+    <p>₹5000 per night</p>
+</div>
+
+    </div>
+
+    <!-- Booking Form -->
+    <div class="booking">
+        <h1 style="text-align: center;color: rgb(96, 96, 238);">Book Your Room</h1>
+
+        <input type="text" id="name" placeholder="Your Name"><br><br>
+        <input type="email" id="email" placeholder="Your Email"><br><br>
+
+        <select id="room">
+            <option value="">Select Room Type</option>
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+            <option value="deluxe">Deluxe</option>
+        </select>
+        <br><br><br>
+        <label>Check-in Date</label>
+        <input type="date" id="checkin">
+        <br><br>
+        <label>Check-out Date</label>
+        <input type="date" id="checkout">
+
+        <button onclick="bookRoom()">Book Now</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
