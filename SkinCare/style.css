@@ -1,0 +1,140 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(135deg,#dbefff,#c2e9fb,#e0f7ff,#d0f0ff);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes gradientBG {
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    width: 90%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 20px 40px rgba(0, 140, 255, 0.15);
+    color: #034f84;
+    transition: 0.4s ease;
+}
+
+.container:hover{
+    transform: translateY(-5px);
+}
+
+h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #0277bd;
+}
+
+p{
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+input[type="radio"]{
+    accent-color: #4fc3f7;
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+button{
+    padding: 14px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 25px;
+    cursor: pointer;
+    background: linear-gradient(45deg,#4fc3f7,#0288d1);
+    color: white;
+    box-shadow: 0 8px 20px rgba(2,136,209,0.3);
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(2,136,209,0.4);
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+#scoreResult{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #01579b;
+}
+
+#spinPage{
+    display: none;
+    text-align: center;
+}
+
+#wheel{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(38, 33, 33);
+    background: conic-gradient(
+        #4fc3f7 0deg 72deg,
+        #29b6f6 72deg 144deg,
+        #03a9f4 144deg 216deg,
+        #039be5 216deg 288deg,
+        #0288d1 288deg 360deg
+    );
+    box-shadow: 0 20px 40px rgba(2,136,209,0.3);
+    transition: transform 2s cubic-bezier(0.33, 1, 0.68, 1);
+    position: relative;
+}
+
+#wheel::after{
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: #e1f5fe38;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#discountResult{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #01579b;
+}
+
+#quizPage, #spinPage{
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform: translateY(20px);}
+    to{opacity:1; transform: translateY(0);}
+}
