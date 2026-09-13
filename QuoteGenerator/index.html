@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InspireMe - Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <h1>InspireMe</h1>
+        <button id="themeToggle">🌙</button>
+    </div>
+
+    <div class="category-buttons">
+        <button onclick="setCategory('all')">All</button>
+        <button onclick="setCategory('motivational')">Motivational</button>
+        <button onclick="setCategory('success')">Success</button>
+        <button onclick="setCategory('life')">Life</button>
+    </div>
+
+    <div class="quote-box">
+        <p id="quote">Click below to generate a quote!</p>
+
+        <div class="actions">
+            <button onclick="generateQuote()">Generate</button>
+            <button onclick="saveQuote()">❤️</button>
+            <button onclick="copyQuote()">📒</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
