@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aesthetic Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="nav-logo" onclick="showPage('shop-page')">🛍️ Aesthetic Store</div>
+
+    <input type="text" id="search-box" placeholder="Search products..." onkeyup="searchProduct()">
+
+    <div class="nav-buttons">
+        <button onclick="showPage('shop-page')">Shop</button>
+        <button onclick="showPage('cart-page')">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </button>
+    </div>
+</nav>
+
+<!-- SHOP -->
+<div id="shop-page" class="page active">
+    <div class="products-grid" id="products-display"></div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>✨ Aesthetic Store – Your vibe, your style.</p>
+        <p>Shop trendy items & unlock exclusive rewards 🎁</p>
+    </footer>
+</div>
+
+<!-- CART -->
+<div id="cart-page" class="page">
+    <h2>Your Shopping Bag</h2>
+    <div id="cart-display"></div>
+    
+    <div id="summary-box"></div>
+</div>
+
+<!-- GAME -->
+<div id="game-page" class="page">
+    <h1>🃏 Match & Win</h1>
+    <p>Match 2 cards to win FREE Chocolate 🍫</p>
+    <div id="chance-text">Chances: 2</div>
+    <div id="game-board" class="game-grid"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
